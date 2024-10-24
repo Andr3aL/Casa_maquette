@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}  
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /* font-family: "Roboto", sans-serif; */
+    
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Parisienne&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Oxanium:wght@200..800&display=swap');
+
+header{
+    background: url(../img/bg.jpg) 50% 50%;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+}
+
+h1, h2{
+    font-family: "Ephesis", cursive;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.164);
+    height: 100px;
+    width: 67%;
+}
+
+#nav{
+    background-color: rgba(128, 128, 128, 0.164);
+}
+
+#ulnav{
+    display: flex;
+    flex-direction: row;
+    /* width: 200px; */
+}
+
+li{
+    list-style-type: none;
+}
+
