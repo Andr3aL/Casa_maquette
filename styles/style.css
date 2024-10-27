@@ -32,11 +32,12 @@ h1 {
     font-family: "Ephesis", cursive;
     display: inline-block;
     font-size: 25px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 header > p {
     font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -65,30 +66,35 @@ nav {
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
+    cursor: pointer;
+
     
 }
 
 a{
     text-decoration: none;
-    
+    color: inherit;
 }
 
 li{
+    font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
+    padding: 15px;
+    border-radius: 30px;
 }
 
 li:hover{
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 20px;
-    transition: 0.3s ease-in-out;
+    /* padding: 15px; */
+    /* border: 3px solid white; */
+    background-color: #7BAFC9;
+    transition: 0.5s ease-in-out;
 }
 
 #licontact {
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 20px;
+    padding: 15px;
+    border: 3px solid white;
+    border-radius: 30px;
 }
 
 #whatareyou_bg {
@@ -102,6 +108,7 @@ li:hover{
 }
 
 #whatareyou {
+    font-family: Arial, Helvetica, sans-serif;
     width: 60%;
     margin: 0 auto;
     display: flex;
@@ -128,7 +135,25 @@ li:hover{
     margin: 0 auto;
 }
 
+#liste_pdt pre {
+    padding: 10px;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+    color: rgba(128, 128, 128, 0.591);
+}
+
+#liste_pdt h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+
 #liste_pdt div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
     border: 1px solid rgba(128, 128, 128, 0.29);
     width: 394px;
     height: 510px;
@@ -137,15 +162,15 @@ li:hover{
 }
 
 #liste_pdt img {
-    width: 394px;
+    width: 392px;
     height: 392px;
 }
 
 #liste_pdt span {
     display: inline-block;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     background-color: white;
     padding: 15px 10px;
     font-size: 1.5rem;
@@ -154,14 +179,75 @@ li:hover{
 #liste_pdt button {
     background-color: white;
     color: #7BAFC9;
-    border: 1px solid a#7BAFC9;
+    border: 1px solid #7BAFC9;
     border-radius: 30px;
     padding: 15px 20px;
     margin-bottom: 30px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+
+#liste_pdt button:hover {
+    background-color: #7BAFC9;
+    color: white;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 footer {
+    font-size: 1.5rem;
+    color: white;
     background-color: #7BAFC9;
     height: 422px;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
+#footer {
+    width: 67%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+#footer a, p {
+    padding: 15px;
+}
+
+
+#footer p{
+    padding-bottom: 35px;
+    padding-top: 40px;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+#about, #appartements, #newYork, #araEtIcons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+#icons {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
+
+footer hr {
+    width: 1302px;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#copy {
+    color: white;
+    text-align: center;
+}
